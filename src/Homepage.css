@@ -1,0 +1,175 @@
+body{
+    background: rgb(171, 211, 171);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: content-box;
+}
+
+.full_container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+
+.front_first,.back_second{
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    
+    border-radius: 4px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    width:450px;
+    max-height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front_first p{
+    color:rgb(2, 60, 2);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.front_first button{
+    width:5vw;
+    height:5vh;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,128,0,0.7);
+    border:none;
+    border-radius: 2px;
+}
+
+.front_first button:hover{
+    cursor: pointer;
+    background-color: rgb(73, 165, 73);
+}
+
+.front_first button:active{
+    
+    background-color: rgb(34, 134, 34);
+}
+
+
+
+.header_line{
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+    color:rgb(2, 60, 2);
+    margin-top: 2vh;
+}
+
+.input_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input_container input{
+   width:300px;
+    height:20px;
+}
+
+.input_container .add_button{
+    width:50px;
+    height:30px;
+    margin-left: 1%;
+    margin-top:-3px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,128,0,0.7);
+    border:none;
+    border-radius: 2px;
+}
+
+.input_container .add_button:hover{
+    cursor: pointer;
+    background-color: rgb(73, 165, 73);
+}
+
+.input_container .add_button:active{
+    
+    background-color: rgb(34, 134, 34);
+}
+
+.todolist_container{
+    
+    display:flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    max-height: 40vh;
+    overflow-x: auto;
+    width:90%;
+    height: 90%;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.single_todo_item{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.single_todo_item input{
+    width:18px;
+    height:18px;
+    align-self: center;
+    margin-left: 1vw;
+}
+
+.single_todo_item p{
+    font-size: 18px;
+    width:220px;
+    text-align: left;
+    color: rgb(2, 60, 2);
+}
+.single_todo_item .delete_button{
+    width:50px;
+    height:30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255,0,0,0.7);
+    border:none;
+    border-radius: 2px;
+    align-self: center;
+}
+
+.single_todo_item .delete_button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 73, 73);
+}
+
+.single_todo_item .delete_button:active{
+    
+    background-color: rgb(255, 34, 34);
+}
+
+.single_todo_item .edit_button{
+    width:50px;
+    height:30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(39, 116, 188, 0.7);
+    border:none;
+    border-radius: 2px;
+    align-self: center;
+}
+
+.single_todo_item .edit_button:hover{
+    cursor: pointer;
+    background-color: rgb(91, 168, 231);
+}
+
+.single_todo_item .edit_button:active{
+    
+    background-color: rgb(161, 199, 222);
+}
+
